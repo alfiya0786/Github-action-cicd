@@ -1,0 +1,10 @@
+name: Deploy
+
+on: 
+  workflow_call: 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy the code
+        run: echo "Code Deploy on EC2 Instance"
