@@ -6,5 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: clone the code
+        uses: actions/checkout@v7
+        
+      - name: deploy via nginx
+        run: cp index.html var/www/html
+        
       - name: Deploy the code
         run: echo "Code Deploy on EC2 Instance"
