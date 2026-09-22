@@ -7,14 +7,14 @@ on:
 
 # Job in the workflows
 jobs:
-   code-checkout:
-     runs-on: ubuntu-latest
+  code-checkout:
+    runs-on: ubuntu-latest
      # Steps in the workflow
-     steps:
-       - name: Clone the code
-         uses: action/checkout@v7
+    steps:
+      - name: Clone the code
+        uses: action/checkout@v7
          
-       - name: Print the message
-         run: echo "Code cloned"
+      - name: Print the message
+        run: echo "Code cloned"
 
   
